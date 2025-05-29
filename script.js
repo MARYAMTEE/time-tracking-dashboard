@@ -4,5 +4,5 @@ const monthlyBtn = document.querySelector(".monthlyBtn");
 const allButtons = document.querySelectorAll(".select-btn");
 
 dailyBtn.addEventListener("click", () => {
-    fetch(/)
+    fetch()
 })
