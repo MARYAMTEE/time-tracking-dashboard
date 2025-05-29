@@ -4,12 +4,25 @@
     box-sizing: border-box;
 }
 
-.owners-info{
-    
-    display: flex;
-    align-items: flex-end;
+:root{
+--purple: hsl(246, 80%, 60%);
+--orange: hsl(15, 100%, 70%);
+--blue: hsl(195, 74%, 62%);
+--pink: hsl(348, 100%, 68%);
+--green: hsl(145, 58%, 55%);
+--purple: hsl(264, 64%, 52%);
+--yellow: hsl(43, 84%, 65%);
+
+--deep-navy: hsl(226, 43%, 10%);
+--light-navy: hsl(235, 46%, 20%);
+--lilac: hsl(235, 45%, 61%);
+--light-lilac: hsl(236, 100%, 87%);
 }
 
-.owner-personal-info{
-    display: flex;
+body{
+    color: white;
+}
+
+.container{
+    background-color: var(--deep-navy);
 }
