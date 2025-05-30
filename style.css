@@ -88,7 +88,7 @@ button{
     margin: 20px 0;
 }
 
-button:active{
+button.active{
     color: white;
 }
 
