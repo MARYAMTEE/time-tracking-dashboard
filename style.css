@@ -86,6 +86,76 @@ button{
     margin: 20px 0;
 }
 
-button.active{
+button:active{
     color: white;
+}
+
+/* Styling each card */
+.container-card{
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 210px;
+    background-position-y: -10px;
+    width: 300px;
+    height: 135px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container-work{
+    background-image: url(./images/icon-work.svg);
+    background-color: var(--orange);
+}
+
+.container-play{
+    background-image: url(./images/icon-play.svg);
+    background-color: var(--blue);
+}
+
+.container-study{
+    background-image: url(./images/icon-study.svg);
+    background-color: var(--pink);
+}
+
+.container-exercise{
+    background-image: url(./images/icon-exercise.svg);
+    background-color: var(--green);
+}
+
+.container-social{
+    background-image: url(./images/icon-social.svg);
+    background-color: var(--purple);
+}
+
+.container-self{
+    background-image: url(./images/icon-self-care.svg);
+    background-color: var(--yellow);
+}
+
+.card{
+    background-color: var(--light-navy);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-top img{
+    object-fit: contain;
+}
+
+.info-bottom{
+    display: flex;
+    justify-content: space-between;
 }

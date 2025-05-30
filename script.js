@@ -12,7 +12,7 @@ fetch("data.json")
 
     // Set up button
     const buttons = document.querySelectorAll("button[data-time]");
-    const container = document.querySelector(".work-container");
+    const container = document.querySelector(".cards-container");
 
     buttons.forEach(button => {
         button.addEventListener("click", () => {
@@ -25,8 +25,8 @@ fetch("data.json")
                 const previous = item.timeframes[timeframe].previous;
 
                 container.innerHTML += `
-                <div class="container-card">
-                    <div class="card">
+                <div class="container-card container-${title.toLowerCase()}">
+                    <div class="card card-${title.toLowerCase()}">
                         <div class="info-top">
                             <h3>${title}</h3>
                             <img src="images/icon-ellipsis.svg" alt="${title} icon" />
@@ -44,5 +44,5 @@ fetch("data.json")
 })
 .catch(error => {
     console.log("Fetch error:", error);
-    document.querySelector("work-container").innerHTML = "Failed to load data";
+    document.querySelector(".cards-container").innerHTML = "Failed to load data";
 });
