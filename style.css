@@ -10,7 +10,7 @@
 --blue: hsl(195, 74%, 62%);
 --pink: hsl(348, 100%, 68%);
 --green: hsl(145, 58%, 55%);
---purple: hsl(264, 64%, 52%);
+--purple02: hsl(264, 64%, 52%);
 --yellow: hsl(43, 84%, 65%);
 
 --deep-navy: hsl(226, 43%, 10%);
@@ -20,9 +20,71 @@
 }
 
 body{
-    color: white;
+    font-family: "Rubik", sans-serif;
+    color: var(--light-lilac);
+    font-weight: 400;
 }
 
 .container{
     background-color: var(--deep-navy);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.owner-personal-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple);
+    border-radius: 10px;
+    width: 300px;
+    height: 115px;
+    gap: 15px;
+}
+
+.owners-info{
+    width: 300px;
+    height: 170px;
+    background-color: var(--light-navy);
+    border-radius: 10px;
+}
+
+.owner-image img{
+    width: 65px;
+    height: 65px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.owner-description p{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.owner-description h1{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+/* buttons */
+button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--light-lilac);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.owner-timeframe{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+}
+
+button.active{
+    color: white;
 }

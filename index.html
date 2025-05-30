@@ -6,6 +6,12 @@
     <title>Time Tracking Dashboard</title>
     <!-- favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
     <!-- JavaScript -->
     <script src="script.js" defer></script>
     <!-- CSS -->
@@ -16,19 +22,20 @@
         <div class="row">
             <div class="col">
                 <div class="owners-info">
-                    <div class="owner-plan">
-                        <button class="daily-btn select-btn">Daily</button>
-                        <button class="weekly-btn select-btn">Weekly</button>
-                        <button class="monthly-btn select-btn">Monthly</button>
-                    </div>
                     <div class="owner-personal-info">
                         <div class="owner-image">
                             <img src="./images/image-jeremy.png" alt="Owner's image">
                         </div>
                         <div class="owner-description">
-                            <h3>Report for</h3>
+                            <p>Report for</p>
                             <h1>Jeremy Robson</h1>
                         </div>
+                    </div>
+
+                    <div class="owner-timeframe">
+                        <button class="daily-btn select-btn">Daily</button>
+                        <button class="weekly-btn select-btn active">Weekly</button>
+                        <button class="monthly-btn select-btn">Monthly</button>
                     </div>
                 </div>
 
