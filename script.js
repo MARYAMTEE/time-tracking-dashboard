@@ -18,6 +18,12 @@ const container = document.querySelector(".cards-container");
 function renderCards(timeframe){
     container.innerHTML = "";
 
+    const previousLabels = {
+        daily: "Yesterday",
+        weekly: "Last Week",
+        monthly: "Last Month"
+    }
+
     data.forEach(item => {
         const title = item.title;
         const current = item.timeframes[timeframe].current;
@@ -32,7 +38,7 @@ function renderCards(timeframe){
                 </div>
                 <div class="info-bottom">
                     <p>${current}hrs</p>
-                    <p>Last Week - ${previous}hrs</p>
+                    <p>${previousLabels[timeframe]} - ${previous}hrs</p>
                 </div>
             </div>
         </div>
