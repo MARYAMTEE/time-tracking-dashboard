@@ -202,12 +202,11 @@ body{
     align-items: flex-start;
 }
 
- .cards-container{
+.cards-container{
     grid-template-columns: repeat(3, 1fr); 
-    
- }
+}
 
- .info-bottom{
+.info-bottom{
     display: block;
     justify-content: space-between;
     align-items: center;
@@ -261,4 +260,84 @@ body{
 .info-bottom p:nth-child(2){
     margin-top: 10px;
 }
+}
+
+@media (min-width: 768px) and (max-width: 1030px){
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.col{
+    display: flex;
+    align-items: flex-start;
+}
+
+.cards-container{
+    grid-template-columns: repeat(2, 1fr); 
+ }
+
+ .info-bottom{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ .container-card{
+    width: 230px;
+    height: 210px;
+    background-position-x: right;
+}
+
+.card{
+    width: 230px;
+    height: 170px;
+    padding: 20px;
+}
+
+.owners-info{
+    width: 230px;
+    height: 670px;
+    margin-right: 20px;
+}
+
+.owner-personal-info{
+    display: block;
+    width: 230px;
+    height: 400px;
+    padding: 30px;
+}
+
+.owner-timeframe{
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    position: absolute;
+    bottom: 70px;
+}
+
+button{
+    font-size: 18px;
+}
+
+.owner-description{
+    margin-top: 30px;
+}
+
+.owner-description h1{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.info-bottom p:nth-child(1){
+    font-size: 45px;
+}
+
+.info-bottom p:nth-child(2){
+    margin-top: 10px;
+}
+    
 }
