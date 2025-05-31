@@ -23,12 +23,12 @@ body{
     font-family: "Rubik", sans-serif;
     color: var(--light-lilac);
     font-weight: 400;
-     margin: 50px 0;
-     background-color: var(--deep-navy);
+    margin: 50px 0;
+    background-color: var(--deep-navy);
 }
 
 .container{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -42,6 +42,8 @@ body{
     width: 300px;
     height: 115px;
     gap: 15px;
+    position: absolute;
+    top: 0;
 }
 
 .owners-info{
@@ -50,11 +52,12 @@ body{
     background-color: var(--light-navy);
     border-radius: 10px;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .owner-image img{
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
     border: 3px solid white;
     border-radius: 50%;
 }
@@ -68,6 +71,7 @@ body{
     font-size: 20px;
     font-weight: 400;
     margin-top: 5px;
+    color: white;
 }
 
 /* buttons */
@@ -83,9 +87,11 @@ button{
 
 .owner-timeframe{
     display: flex;
-    justify-content: center;
+    left: 10%;
     gap: 50px;
     margin: 20px 0;
+    position: absolute;
+    bottom: 0;
 }
 
 button.active{
@@ -94,6 +100,8 @@ button.active{
 
 /* Styling each card */
 .container-card{
+    display: grid;
+    gap: 20px;
     border-radius: 10px;
     background-repeat: no-repeat;
     background-position-x: 210px;
@@ -101,7 +109,6 @@ button.active{
     width: 300px;
     height: 140px;
     position: relative;
-    margin-bottom: 20px;
 }
 
 .container-work{
@@ -142,7 +149,6 @@ button.active{
     width: 300px;
     height: 110px;
     border-radius: 10px;
-    padding: 0 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -178,4 +184,81 @@ button.active{
 
 .info-bottom p:nth-child(2){
     font-size: 14px;
+}
+
+.cards-container{
+    display: grid;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1137px){
+
+body{
+    width: 100vw;
+    height: 100vh;
+    }
+
+.col{
+    display: flex;
+    align-items: flex-start;
+}
+
+ .cards-container{
+    grid-template-columns: repeat(3, 1fr); 
+    
+ }
+
+ .info-bottom{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+ .container-card{
+    width: 230px;
+    height: 210px;
+}
+
+.card{
+    width: 230px;
+    height: 170px;
+    padding: 20px;
+}
+
+.owners-info{
+    width: 230px;
+    height: 440px;
+    margin-right: 20px;
+}
+
+.owner-personal-info{
+    display: block;
+    width: 230px;
+    height: 300px;
+    padding: 30px;
+}
+
+.owner-timeframe{
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.owner-description{
+    margin-top: 30px;
+}
+
+.owner-description h1{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.info-bottom p:nth-child(1){
+    font-size: 45px;
+}
+
+.info-bottom p:nth-child(2){
+    margin-top: 10px;
+}
 }
